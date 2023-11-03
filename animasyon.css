@@ -1,0 +1,33 @@
+div{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url(./Run.png);
+    background-position: 0px;
+    animation-name: run ;
+    animation-duration: 1s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+animation: run 1s steps(8) infinite reverse , kos 10s infinite linear;
+
+
+    
+}
+@keyframes kos{
+0%{
+    left: 0px;
+}
+100%{
+    left: 100%;
+}
+}
+@keyframes run{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1024px;
+    }
+}
